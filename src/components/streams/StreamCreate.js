@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, reduxForm, touch } from "redux-form";
+import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 import { createStream } from "../../actions/index";
 
