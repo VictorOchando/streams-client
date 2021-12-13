@@ -8,6 +8,7 @@ import {
     FETCH_STREAMS,
 } from "./types";
 import streams from "../apis/streams";
+import history from "../history";
 
 export const signIn = (userId) => {
     return {
@@ -30,6 +31,7 @@ export const createStream = (formValues) => {
             userId,
         });
         dispatch({ type: CREATE_STREAM, payload: response.data });
+        history.push("/");
     };
 };
 
