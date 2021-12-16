@@ -16,7 +16,6 @@ class StreamDelete extends React.Component {
                     onClick={() =>
                         this.props.deleteStream(this.props.match.params.id)
                     }
-                    //esto se lanza solo aunque no clicke
                     className="ui button negative"
                 >
                     Delete
